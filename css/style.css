@@ -1,0 +1,337 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+/* HEADER */
+#header {
+	display: flex;
+	flex-direction: row;
+}
+#cv_img {
+	width: 30%;
+	display: flex;
+	justify-content: center;
+    background-color: #23374d;
+    padding-left: 10px;
+}
+#cv_img img {
+	margin: 25px;
+	border-radius: 100%;
+	
+}
+#cv_titre {
+	align-self: center;
+}
+#cv_titre h1,
+#cv_titre h2 {
+	margin: 0;
+	padding: 0 40px;
+	color: rgba(0,0,0,0.95);
+}
+
+#name{
+	color: #fdc930;
+}
+.hr-header{
+    border: solid 1.5px #fdc930;
+    width: 80%;
+   
+}
+#cv_titre,
+.photo {
+	display: flex;
+	flex-direction: column;
+}
+
+/******** CONTENT *********/
+section{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    border-right: solid 1px whitesmoke;
+    
+}
+
+
+
+/**** Partie de gauche ****/
+/* General */
+.container-33{
+    width: 33.33%;
+    background: #23374d;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0px;
+}
+
+.container-33 h3{
+    margin-bottom: 30px;
+	background-color:#fdc930;
+	border-right: 1.5px solid #fdc930;
+	text-align: center;
+	padding: 30px 0;
+    text-transform: uppercase;
+    color: #23374d;
+    font-size: 23px;
+    
+}
+
+.col-4{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+
+.hobbies {
+	text-align: center;
+	margin-bottom: 100px;
+}
+.hobbies i {
+	width: 1em;
+	height: 1em;
+	line-height: 1em;
+	border-radius: 50%;
+	border: 2px solid whitesmoke;
+	padding: 10px;
+    margin: 0 30px;
+    color:  whitesmoke;
+}
+.title{
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+/* Photo */
+.photo{
+    margin-right: 250px;
+}
+
+.photo-style{
+    margin: 20px;
+    width: 184px;
+    height: 184px;
+    border-radius: 200px;
+}
+
+/* Infos contact */
+.contact{
+   margin-bottom: 20px;
+   text-align:  center;
+   
+}
+
+.contact i{
+   color: whitesmoke;
+   
+}
+.contact ul {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+.contact ul li {
+    margin-bottom: 25px;
+    color: white;
+}
+.contact ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+/* Parcours */
+
+.about_me{
+    color: whitesmoke;
+    margin-bottom: 35px;
+    margin-top: 40px;
+    font-size: 15px;
+    display: flex;
+    flex-grow: 2;
+    
+}
+
+.about_me p{
+    font-style: italic;
+    text-align: center;
+    text-align: justify;
+    margin-left: 32px;
+    margin-right: 32px;
+    font-size: 17px;
+}
+
+
+
+/**** Partie de droite ****/
+/* General */
+.container-66{
+    width: 66.66%;
+    margin: 30px 50px;
+}
+
+.container-66 h3{
+    color: #23374d;
+}
+
+
+
+
+
+
+/* Expériences pro */
+
+
+hr{
+    border: solid 1.5px #fdc930;
+}
+
+.article {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	margin-bottom: 20px
+}
+.article p {
+	text-align: justify;
+}
+.date {
+	display: flex;
+	flex-direction: row;
+	width: 35%;
+	padding-right: 20px;
+}
+.infos {
+	display: flex;
+	flex-direction: column;
+	width: 65%;
+}
+.infos strong {
+	text-transform: uppercase;
+}
+.infos p {
+	margin-bottom: 8px;
+}
+.date i {
+	margin-right: 20px;
+	padding-top: 4px;
+	color: #FFB700;
+}
+.date p,
+.infos p {
+	margin-top: 0;
+}
+#recommandation {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 3em;
+}
+.recommandation_name {
+	width: 50%;
+}
+.recommandation_name .name {
+	text-transform: uppercase;
+}
+.recommandation_name .info {
+	margin-top: 6px;
+	margin-bottom: 0;
+}
+.fa {
+    color:  #FFB700;
+    margin-right: 30px;
+}
+.fas{
+    color:  #FFB700;
+    margin-right: 30px;
+}
+
+/* ============== Medias queries =============== */
+@media only screen and (max-width: 900px) {
+    /* header */
+    #header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #cv_img,
+    #cv_titre{
+        width: 100%;
+        padding: 0;
+    }
+    .photo {
+        margin: 0;
+    }
+    .titre {
+        margin: auto;
+    }
+    .about_me p {
+        padding: 0 35px;
+    }
+    #cv_titre{
+		text-align: center;
+		background-color: #23374d;
+    }
+    #cv_titre h1,
+	#cv_titre h2 {
+		margin: 0;
+		padding: 0 18px;
+        color: white;
+        padding-bottom: 35px;
+    }
+    #name{
+        color: white;
+    }
+    
+    /* section main */
+    #main {
+        flex-direction: column;
+    }
+    .container-33 {
+        width: 100%;
+    }
+    .container-66 {
+        width: 100%;
+        margin: 30px 0;
+    }
+    .title {
+        width: 80%;
+        margin: auto;
+    }
+    .article {
+        flex-direction: column;
+    }
+    .date,
+    .infos,
+    #recommandation {
+        width: 80%;
+        margin: auto;
+        padding: 0;
+    }
+    .infos {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .infos {
+        padding: 20px 30px 0;
+        margin-top: 15px;
+    }
+    #recommandation {
+        flex-direction: column;
+    }
+    .recommandation_name {
+        margin: 20px;
+    }
+}
